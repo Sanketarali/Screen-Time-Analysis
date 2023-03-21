@@ -30,21 +30,31 @@ data.head()<br>
  <h3>Now let’s have a look if the dataset has any null values or not:</h3>
  data.isnull().sum()<br>
  
+ ![result](https://github.com/Sanketarali/Screen-Time-Analysis/blob/main/isnull.png)
+ 
  <h3>Now let’s start with analyzing the screen time of the user. I will first look at the amount of usage of the apps:</h3>
  figure=px.bar(data_frame=data,x='Date',y='Usage',title='Usage',color='App')<br>
 figure.show()<br>
+
+ ![result](https://github.com/Sanketarali/Screen-Time-Analysis/blob/main/1st.png)
 
  <h3>Now let’s have a look at the number of notifications from the apps::</h3>
  figure=px.bar(data_frame=data,x='Date',y='Notifications',title='Notifications',color='App')<br>
 figure.show()<br>
 
+ ![result](https://github.com/Sanketarali/Screen-Time-Analysis/blob/main/2nd.png)
+
  <h3>Now let’s have a look at the number of times the apps opened:</h3>
  figure=px.bar(data_frame=data,x='Date',y='Times opened',title='Notifications',color='App')<br>
  figure.show()<br>
  
+  ![result](https://github.com/Sanketarali/Screen-Time-Analysis/blob/main/3rd.png)
+ 
  <h3>We generally use our smartphones when we get notified by any app. So let’s have a look at the relationship between the number of notifications and the amount of usage:</h3>
 figure=px.scatter(data_frame=data,x='Notifications',y='Usage',trendline='ols',size='Notifications',title='Relationship Between Number of Notifications and Usage')<br>
 figure.show()<br>
+
+  ![result](https://github.com/Sanketarali/Screen-Time-Analysis/blob/main/4th.png)
  
 
 
