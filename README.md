@@ -56,6 +56,7 @@ figure.show()<br>
 
   ![result](https://github.com/Sanketarali/Screen-Time-Analysis/blob/main/4th.png)
  
+ <h3>There’s a linear relationship between the number of notifications and the amount of usage. It means that more notifications result in more use of smartphones.</h3>
 
 
 
